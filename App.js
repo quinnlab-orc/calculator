@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import githublogo from './GitHub-Mark-32px.png';
 
 function App() {
   const [number1, setNumber1] = React.useState('');
@@ -135,6 +136,11 @@ function App() {
   return (
     <body className="body">
       <h1>Calculator</h1>
+      <h2 className="name">Quinn LaBrie</h2>
+      <a href="https://github.com/quinnlab-orc">
+        <img src={githublogo} alt="github"/>
+      </a>
+      <br></br><br></br>
       <div className="container"> 
         <div className="display">
           <br></br>

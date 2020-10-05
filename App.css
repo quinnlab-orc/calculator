@@ -1,6 +1,9 @@
 .body {
   text-align: center;
 }
+.name {
+  font-size: 15px;
+}
 
 
 .container {
