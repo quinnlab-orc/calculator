@@ -134,8 +134,8 @@ function App() {
 
   return (
     <body className="body">
-      <div className="container">   
-        <h1>Calculator</h1> 
+      <h1>Calculator</h1>
+      <div className="container"> 
         <div className="display">
           <br></br>
           {output}
@@ -146,26 +146,26 @@ function App() {
               <button className="num" onClick={() => handleClick(7)}>7</button>
               <button className="num" onClick={() => handleClick(8)}>8</button>
               <button className="num" onClick={() => handleClick(9)}>9</button>
-              <button onClick={() => handleOperator('c')}>Clear</button>
+              <button className="clear" onClick={() => handleOperator('c')}>Clear</button>
             </div>
             <div className="row">
               <button className="num" onClick={() => handleClick(4)}>4</button>
               <button className="num" onClick={() => handleClick(5)}>5</button>
               <button className="num" onClick={() => handleClick(6)}>6</button>
-              <button onClick={() => handleOperator('+')}>+</button>
-              <button onClick={() => handleOperator('-')}>-</button>
+              <button className="operators" onClick={() => handleOperator('+')}>+</button>
+              <button className="operators" onClick={() => handleOperator('-')}>-</button>
             </div>
             <div className="row">
               <button className="num" onClick={() => handleClick(1)}>1</button>
               <button className="num" onClick={() => handleClick(2)}>2</button>
               <button className="num" onClick={() => handleClick(3)}>3</button>
-              <button onClick={() => handleOperator('*')}>*</button>
-              <button onClick={() => handleOperator('/')}>/</button>
+              <button className="operators" onClick={() => handleOperator('*')}>*</button>
+              <button className="operators" onClick={() => handleOperator('/')}>/</button>
             </div>
             <div className="row">
               <button className="num" onClick={() => handleClick(0)}>0</button>
-              <button onClick={() => handleClick('.')}>.</button>
-              <button onClick={() => handleOperator('=')}>=</button>
+              <button className="operators" onClick={() => handleClick('.')}>.</button>
+              <button className="equals" onClick={() => handleOperator('=')}>=</button>
             </div>
           </div>
         </div>

@@ -1,7 +1,19 @@
+.body {
+  text-align: center;
+}
+
+
 .container {
   text-align: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 170px;
+  background-color: lightgrey;
   align-items: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
 }
 
 .numbers {
@@ -22,9 +34,11 @@
 
 .num {
   background-color: coral;
+  width: 25px;
 }
 
 .display {
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   background-color: gray;
@@ -32,4 +46,35 @@
   height: 50px;
   font-weight: bold;
   font-size: large;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+.equals {
+  width: 75px;  
+}
+.clear {
+  width: 50px;
+}
+.operators {
+  width: 25px;
+}
+
+
+.num:hover {
+  background-color: lightskyblue;
+  color: coral;
+}
+.operators:hover {
+  background-color: lightgreen;
+  color: grey;
+}
+.equals:hover {
+  background-color: lightgreen;
+  color: grey; 
+}
+.clear:hover {
+  background-color: red;
+  color: grey;
 }
